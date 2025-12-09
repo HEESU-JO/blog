@@ -2,7 +2,7 @@
 title: "QR Decomposition"
 categories: [math]
 tags: [linear-algebra, qr, matrix-factorization]
----
+---  
 
 <script>
 window.MathJax = {
@@ -16,7 +16,7 @@ window.MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
-
+  
 # 1. QR Decomposition이란?
 
 QR 분해는 행렬 $A \in \mathbb{R}^{m \times n}$ (보통 $m \ge n$)를  
@@ -32,9 +32,9 @@ $$
   → 아래쪽이 모두 0 (조금 더 정확히 말하자면, $t_{ij}$가 R 행렬의 entry 일 때, $t_{ij}=0$ for $i>j$)
 
 QR 분해는 *“복잡한 행렬을 정리된 기저(Q)와 구조적 계수(R)로 바꿔놓는 과정”*이라고 이해하면 된다.  
-
----  
-
+  
+---   
+  
 # 2. 왜 Q가 orthonormal이고 R이 upper triangular가 되는가?
 
 ## 2.1 직교 기저로 바꾼다는 의미
@@ -125,7 +125,7 @@ $$
 
 QR 분해는 수학 이론뿐 아니라 **실제 엔지니어링, 머신러닝, 최적화 분야에서 핵심적인 역할**을 한다.
 
-## ⭐ 1) 선형회귀(Least Squares) — 가장 많이 쓰임
+## 1) 선형회귀(Least Squares) — 가장 많이 쓰임
 
 선형회귀 문제 $Ax = b$는 보통 정규방정식으로 풀지만:
 
@@ -143,9 +143,9 @@ $$
 
 R이 upper triangular matrix이기 때문에 back-substitution으로 빠르고 안정적으로 풀 수 있다.  
 
----
 
-## ⭐ 2) 정사영(projection) 계산
+
+## 2) 정사영(projection) 계산
 
 벡터 $b$를 A의 column space에 정사영하려면:
 
@@ -155,25 +155,23 @@ $$
 
 Q가 직교이기 때문에 projection이 매우 간단해진다.  
 
----  
 
-## ⭐ 3) SVD 계산의 전처리 (bidiagonalization)
+
+##  3) SVD 계산의 전처리 (bidiagonalization)
 
 SVD는 QR을 반복적으로 적용하는 Householder reduction 기반으로 돌아간다.  
+  
 
----  
-
-## ⭐ 4) Eigenvalue 계산 (QR Algorithm) 
+##  4) Eigenvalue 계산 (QR Algorithm) 
 
 1. 행렬 A를 QR로 분해하고  
 2. $A_{k+1} = R_k Q_k$ 로 갱신  
 3. 반복하면 고유값으로 수렴  
 
 ➡ MATLAB, NumPy, LAPACK 내부에서 사용되는 표준 알고리즘  
+  
 
----  
-
-## ⭐ 5) 머신러닝 최적화
+##  5) 머신러닝 최적화
 
 - Normal Equation 대체  
 - Orthogonalization 필요한 경우  
