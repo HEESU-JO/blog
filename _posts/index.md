@@ -7,3 +7,6 @@ title: "Heesu Jo Tech Blog"
 
 이곳은 제가 공부하면서 이해한 것들, 깨달은 것들의 흔적을 기록하고 공유하는 공간입니다
 
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
