@@ -184,3 +184,7 @@ QR은 “수치 안정성” 때문에 머신러닝에서 옛날부터 많이 �
   그 위에서 원래 벡터의 **계수(R)**를 얻는 과정이다.
 - 머신러닝·수치해석·최적화에서 QR은 **안정성의 핵심**이다.
 - Householder QR과 QR 알고리즘은 실제 구현에서 훨씬 중요하다.
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
