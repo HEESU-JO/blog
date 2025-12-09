@@ -4,6 +4,19 @@ categories: [math]
 tags: [linear-algebra, qr, matrix-factorization]
 ---
 
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
 # 1. QR Decomposition이란?
 
 QR 분해는 행렬 $A \in \mathbb{R}^{m \times n}$ (보통 $m \ge n$)를  
@@ -175,5 +188,4 @@ SVD는 QR을 반복적으로 적용하는 Householder reduction 기반으로 돌
   그 위에서 원래 벡터의 **계수(R)**를 얻는 과정이다.
 - 머신러닝·수치해석·최적화에서 QR은 **안정성의 핵심 도구**이다.
 - Householder QR과 QR 알고리즘은 실제 구현에서 매우 중요하다.
-
 
