@@ -3,3 +3,7 @@ description: "Bio data analysis, ML, healthcare AI, linear algebra, Oracle, proj
 theme: minima
 
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  math_engine: mathjax
