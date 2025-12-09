@@ -6,7 +6,7 @@ tags: [linear-algebra, qr, matrix-factorization]
 
 # 1. QR Decomposition이란?
 
-QR 분해는 행렬 \( A \in \mathbb{R}^{m \times n} \) (보통 \( m \ge n \))를  
+QR 분해는 행렬 \((A \in \mathbb{R}^{m \times n})\) (보통 \( m \ge n \))를  
 두 개의 행렬 **Q**, **R**의 곱으로 나타내는 분해다:
 
 \[
