@@ -1,0 +1,44 @@
+---
+---
+
+@import "minima";
+
+/* ========== 제목 크기 줄이기 ========== */
+
+/* 포스트 맨 위 큰 제목(QR Decomposition) */
+.post-title {
+  font-size: 1.8rem;  /* 기본보다 작게 */
+}
+
+/* 글 안에서 쓰는 가장 큰 제목: 1. QR Decomposition이란? */
+.post-content h1 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 소제목: ## 2.1 직교 기저로 바꾼다는 의미 */
+.post-content h2 {
+  font-size: 1.4rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* 더 작은 소제목: ### Q = 방향 정보 */
+.post-content h3 {
+  font-size: 1.2rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+/* ========== 섹션 사이 간격 넉넉하게 ========== */
+
+/* 수평선(---) 위아래 여백 키우기 */
+.post-content hr {
+  margin: 2.5rem 0;
+}
+
+/* 문단 줄 간격 살짝 늘리기 (가독성용) */
+.post-content p {
+  line-height: 1.7;
+}
