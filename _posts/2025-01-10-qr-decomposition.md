@@ -17,7 +17,7 @@ window.MathJax = {
 </script>
 
   
-## 1. QR Decomposition이란?
+## **1. QR Decomposition이란?**
 
 QR 분해는 행렬 $A \in \mathbb{R}^{m \times n}$ (보통 $m \ge n$)를  
 두 개의 행렬 **Q**, **R**의 곱으로 나타내는 분해다:
@@ -35,9 +35,9 @@ QR 분해는 *“복잡한 행렬을 정리된 기저(Q)와 구조적 계수(R)�
 
 ---   
   
-## 2. 왜 Q가 orthonormal이고 R이 upper triangular가 되는가?
+## **2. 왜 Q가 orthonormal이고 R이 upper triangular가 되는가?**
 
-## 2.1 직교 기저로 바꾼다는 의미
+## **2.1 직교 기저로 바꾼다는 의미**
 
 행렬 A를 열벡터로 표현하면:
 
@@ -67,11 +67,9 @@ $$
      alt="QR decomposition formula" 
      width="300">
      
-  
 ---
 
-
-## 3. Gram–Schmidt 과정과 QR의 관계
+## **3. Gram–Schmidt 과정과 QR의 관계**
 
 QR decomposition을 잘 이해하기 위해서는 Gram–Schmidt process(GS)에 대해서 이해하고 있어야 한다.  
 Gram–Schmidt process(GS)는 "orthonormal basis를 만드는 알고리즘"이고  
@@ -92,7 +90,7 @@ $$
 
 ---  
 
-## 4. QR 분해의 직관적 의미
+## **4. QR 분해의 직관적 의미**
 
 #### 🔹 Q = 방향 정보 (정돈된 축)  
 복잡한 열벡터들을 **서로 직교하고 길이가 1인 축**으로 다시 정렬한 것.
@@ -106,7 +104,7 @@ $$
 
 ---  
 
-## 5. 수학적 성질 정리
+## **5. 수학적 성질 정리**
 
 #### 1) 직교 행렬 Q
 - 길이 보존: $\|Qx\| = \|x\|$  
@@ -123,11 +121,11 @@ $$
 
 ---  
 
-## 6. QR이 어디서 응용되는가? 
+## **6. QR이 어디서 응용되는가?** 
 
 QR 분해는 수학 이론뿐 아니라 **실제 엔지니어링, 머신러닝, 최적화 분야에서 핵심적인 역할**을 한다.
 
-#### 1) 선형회귀(Least Squares) — 가장 많이 쓰임
+#### **1) 선형회귀(Least Squares) — 가장 많이 쓰임**
 
 선형회귀 문제 $Ax = b$는 보통 정규방정식으로 풀지만:
 
@@ -146,7 +144,7 @@ $$
 R이 upper triangular matrix이기 때문에 back-substitution으로 빠르고 안정적으로 풀 수 있다.  
 
 
-#### 2) 정사영(projection) 계산
+#### **2) 정사영(projection) 계산**
 
 벡터 $b$를 A의 column space에 정사영하려면:
 
@@ -157,12 +155,12 @@ $$
 Q가 직교이기 때문에 projection이 매우 간단해진다.  
 
 
-#### 3) SVD 계산의 전처리 (bidiagonalization)
+#### **3) SVD 계산의 전처리 (bidiagonalization)**
 
 SVD는 QR을 반복적으로 적용하는 Householder reduction 기반으로 돌아간다.  
   
 
-####  4) Eigenvalue 계산 (QR Algorithm) 
+#### **4) Eigenvalue 계산 (QR Algorithm)**
 
 1. 행렬 A를 QR로 분해하고  
 2. $A_{k+1} = R_k Q_k$ 로 갱신  
@@ -171,7 +169,7 @@ SVD는 QR을 반복적으로 적용하는 Householder reduction 기반으로 돌
 ➡ MATLAB, NumPy, LAPACK 내부에서 사용되는 표준 알고리즘  
   
 
-####  5) 머신러닝 최적화
+#### **5) 머신러닝 최적화**
 
 - Normal Equation 대체  
 - Orthogonalization 필요한 경우  
@@ -180,7 +178,7 @@ SVD는 QR을 반복적으로 적용하는 Householder reduction 기반으로 돌
 
 ---  
 
-## 7. 정리
+## **7. 정리**
 
 - QR은 벡터 공간을 **정돈된 직교 기저(Q)**로 바꾸고  
   그 위에서 원래 벡터의 **계수(R)**를 얻는 과정이다.
