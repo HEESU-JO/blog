@@ -5,6 +5,18 @@ categories: [machine-learning]
 tags: [regularization, l1, l2, elastic-net, overfitting]
 ---
 
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 ## 1️⃣ 왜 규제가 필요한가?
 
 모델을 훈련하다 보면 종종 훈련 데이터에 너무 과하게 맞춰지는 현상, 즉 **overfitting**이 발생한다.
