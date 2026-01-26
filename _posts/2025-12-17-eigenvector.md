@@ -1,6 +1,6 @@
 ---
 title: "Eigenvalue & Eigenvector"
-date: 2025-01-05
+date: 2025-12-17
 categories: [linear-algebra]
 tags: [eigenvalue, eigenvector, linear-algebra, machine-learning]
 ---
