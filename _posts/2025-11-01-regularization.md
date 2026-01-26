@@ -1,6 +1,6 @@
 ---
 title: "Regularization(정규화) 이해하기 — 왜 필요하고 어떻게 작동할까?"
-date: 2025-01-01
+date: 2025-11-01
 categories: [machine-learning]
 tags: [regularization, l1, l2, elastic-net, overfitting]
 ---
